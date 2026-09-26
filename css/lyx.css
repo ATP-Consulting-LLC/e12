@@ -373,3 +373,24 @@ footer .wordmark .x { color: var(--gold-hi); }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ---- takedown notice (js/sunset.js) ---- */
+.sunset { background: var(--navy-deep); color: #F2F4F8; border-bottom: 2px solid var(--gold-hi); }
+.sunset-in { max-width: 1180px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 18px; }
+.sunset-msg { flex: 1; font-size: 15.5px; line-height: 1.5; margin: 0; }
+.sunset-msg a { color: var(--gold-hi); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.sunset-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.sunset-visit { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 10px;
+  background: var(--gold-hi); color: var(--navy-deep); font-weight: 700; font-size: 15px; text-decoration: none; white-space: nowrap; }
+.sunset-visit:hover { background: #E4BB5E; }
+.sunset-close { width: 44px; height: 44px; border: 1px solid rgba(255,255,255,0.28); border-radius: 10px;
+  background: transparent; color: #F2F4F8; font-size: 26px; line-height: 1; cursor: pointer; }
+.sunset-close:hover { background: rgba(255,255,255,0.08); }
+.sunset a:focus-visible, .sunset button:focus-visible { outline: 3px solid var(--gold-hi); outline-offset: 2px; }
+@media (max-width: 680px) {
+  .sunset-in { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px 16px; }
+  .sunset-actions { justify-content: space-between; }
+  .sunset-visit { flex: 1; justify-content: center; }
+}
+.credit { color: #9FAABC; font-size: 15px; margin-top: 14px; }
+.credit a { color: #D8DEE9; text-decoration: underline; text-underline-offset: 3px; }
